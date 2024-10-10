@@ -1,0 +1,115 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: url("../img/menu.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.menu h1 {
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; /* Aumenta el espacio entre los botones */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro transparente */
+  padding: 30px; /* Aumenta el padding alrededor de los botones */
+  border-radius: 15px;
+}
+
+.nav-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Aumenta el ancho del botón */
+  height: 200px; /* Aumenta la altura del botón */
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  font-size: 30px; /* Ajusta el tamaño del texto */
+  border: none;
+  cursor: pointer;
+  position: relative;
+  /* Añadir transición */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-button .icon {
+  width: 80px; /* Aumenta el tamaño del ícono */
+  height: 80px; /* Aumenta el tamaño del ícono */
+  display: block;
+  margin-bottom: 15px; /* Aumenta el espacio entre imagen y texto */
+}
+
+.nav-button .label {
+  font-size: 20px; /* Ajusta el tamaño del texto */
+  font-weight: bold;
+}
+
+.nav-button.blue {
+  background-color: rgba(224, 255, 255);
+}
+
+.nav-button.red {
+  background-color: rgba(255, 240, 245);
+}
+
+.nav-button.green {
+  background-color: rgba(240, 255, 240);
+}
+
+.nav-button.orange {
+  background-color: rgba(255, 255, 224);
+}
+
+.nav-button.grey {
+  background-color: rgba(216, 191, 216);
+}
+
+.nav-button.pink {
+  background-color: rgba(255, 192, 203, 0.8);
+}
+
+.nav-button.ponk {
+  background-color: rgba(30, 144, 255);
+}
+
+.nav-button:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+}
+
+.cerrar-sesion {
+    position: absolute; /* Posiciona el botón en relación a su primer ancestro posicionado */
+    top: 19px; /* Ajusta la distancia desde la parte superior */
+    left: 10px; /* Ajusta la distancia desde la parte izquierda */
+    padding: 10px 20px; /* Ajusta el relleno interno del botón */
+    background-color: #00CED1; /* Color de fondo del botón */
+    color: rgb(0, 0, 0); /* Color del texto */
+    border: none; /* Quita el borde */
+    border-radius: 50px; /* Hace la punta del botón redonda */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-weight: bold; /* Pone en negrilla el texto */
+    transition: transform 0.3s ease; /* Transición para el efecto de acercamiento */
+    display: flex; /* Para alinear el ícono y el texto */
+    align-items: center; /* Centra verticalmente el ícono y el texto */
+  }
+  
+  .cerrar-sesion i {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+  }
+  
+  .cerrar-sesion:hover {
+    background-color: #DC143C; /* Color de fondo al pasar el cursor */
+    transform: scale(1.1); /* Efecto de acercamiento al pasar el ratón */
+  }
+  

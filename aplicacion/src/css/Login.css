@@ -1,0 +1,103 @@
+/* En Login.css */
+.App {
+    background-image: url('../img/LOGIN.jpg');
+    /* Reemplaza con la ruta correcta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 400px;
+    /* Ajusta el valor según sea necesario */
+    background: linear-gradient(rgba(223, 223, 223, 0.6), rgba(0, 0, 0, 0.6));
+    /* Degradado negro transparente */
+    padding: 30px;
+    /* Más espacio interno */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra ligera */
+    color: #000000;
+    /* Color de texto negro */
+}
+
+.form-container .form-label {
+    font-weight: bold;
+    /* Letras en negrilla */
+}
+
+.form-container h2,
+.form-container p,
+.form-container label,
+.form-container a {
+    font-weight: bold;
+    /* Letras en negrilla */
+}
+
+.form-container button {
+    margin-top: 20px;
+    /* Espacio entre botones */
+}
+
+.form-container .btn-outline-primary,
+.form-container .btn-outline-danger,
+.form-container .btn-outline-secondary {
+    margin: 5px;
+    /* Espacio entre botones de redes sociales */
+}
+
+/* Estilos para "Recuperar clave" */
+.recuperarClave {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #000000; /* Color de texto normal */
+    font-weight: bold; /* Letras en negrilla */
+    transition: color 0.3s; /* Transición suave del color */
+    margin-top: 5px; /* Espacio entre el campo de texto y el enlace */
+    margin-bottom: 10px; /* Ajusta este valor según sea necesario */
+}
+
+.recuperarClave a {
+    color: #000000; /* Color del enlace normal */
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+.recuperarClave a:hover {
+    color: #0059ff; /* Color del enlace cuando el mouse está encima */
+    text-decoration: underline; /* Añade subrayado cuando el mouse está encima */
+}
+
+/* Estilos para "Regístrate" */
+.register-link {
+    color: #000000; /* Color del enlace normal */
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+.register-link:hover {
+    color: #0059ff; /* Color del enlace cuando el mouse está encima */
+    text-decoration: underline; /* Añade subrayado cuando el mouse está encima */
+}
+
+/* Login.css */
+
+.alert-box {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it appears on top */
+    max-width: 300px; /* Adjust as needed */
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

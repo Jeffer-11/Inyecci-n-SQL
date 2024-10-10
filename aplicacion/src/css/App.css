@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.notificacion-container {
+  position: relative;
+  margin-top: 0px; /* Espacio entre el campo y la notificación */
+}
+
+
+.notificacion-container .alert {
+  position: absolute;
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-10%); /* Ajusta la posición horizontal para centrar */
+  text-align: right; /* Alinea el texto a la izquierda */
+  display: inline-block; /* Ajusta el tamaño al contenido */
+  margin-left: -49px; /* Espacio entre el campo y la notificación */
+  max-width: max-content; /* Asegura que no sea más ancha que el viewport */
+  font-size: 12px; /* Reducción del tamaño de la fuente */
+  padding: 0px; /* Padding para el espaciado interno */
+  border-radius: 5px;
+  word-wrap: break-word; /* Permite el quiebre de palabras largas */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra para un poco de profundidad */
+  top: -26px; /* Ajusta este valor para mover la notificación hacia arriba */
+}
+
+.notificacion-container .alert.alert-danger {
+  border: 1px solid #f5c6cb; /* Borde de la notificación */
+}
